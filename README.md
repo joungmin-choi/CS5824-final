@@ -20,7 +20,7 @@ A1CF,20,40,0
 A2M,60,25,0
 ...
 ```
-In 'feature-selction' directory, **coldata.csv** file is a dataframe-based dataset, where each row represents **sample**, and column represents **type** (e.g. tumor, normal) of each sample. Example for dataset format is provided below. below.
+In **"feature-selction"** directory, **"coldata.csv"** file is a dataframe-based dataset, where each row represents **sample**, and column represents **type** (e.g. tumor, normal) of each sample. Example for dataset format is provided below. below.
 
 ```
 sample,type
@@ -34,7 +34,7 @@ After preparing those datasets, run **feature_selection.R**, which would provide
 
 2. After selecting the DEGs, prepare the final dataset for breast cancer subtype classification based on the BP-optimized neural network, where each row represents **sample**, and column represents **gene**. You can find the example case in the **10cv_datasets** directory, which consists of 10cross-validation datasets used in our project. 
 
-3. Based on the optimization algorithm you want to run, select in the **BP-optimized-BRCA-subtype-classifiers** directory and run **python3 algorithmName-net.py**.
+3. Based on the optimization algorithm you want to run, select in the **"BP-optimized-BRCA-subtype-classifiers"** directory and run **"python3 algorithmName-net.py"**.
 
 * Ant lion optimization (ALO): ALO-net.py
 * Sine cosine algorithm (SCA): SCA-net.py
@@ -44,3 +44,5 @@ After preparing those datasets, run **feature_selection.R**, which would provide
 * Grey Wolf Optimization (GWO): GWO-net.py
 * Glorot (Xavier) initialization: Glorot-net.py
 * Random initialization: Random-net.py
+
+4. To run machine learning-based classifiers, run **"./run_ml.sh"** in the **"ML_classifiers"** directory. 
